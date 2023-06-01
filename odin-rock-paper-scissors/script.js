@@ -13,11 +13,14 @@ function playRound(playerSelection) {
   switch (playerSelection) {
     case "rock":
         if (computerSelection === "rock") {
-            return "It's a tie!"}
+            console.log("It's a tie!")
+            break;}
         else if (computerSelection === "paper") {
-            return "You lose! Paper beats rock."}
+            console.log("You lose! Paper beats rock.")
+            break;}
         else if (computerSelection === "scissors") {
-            return "You win! Rock beats scissors."}
+            console.log("You win! Rock beats scissors.")
+            break;}
     case "paper":
         if (computerSelection === "rock") { 
             return "You win! Paper beats rock."}    
@@ -33,6 +36,6 @@ function playRound(playerSelection) {
         else if (computerSelection === "scissors") {
             return "It's a tie!"}
     default:
-        break;
+        return;
   }
 }   
