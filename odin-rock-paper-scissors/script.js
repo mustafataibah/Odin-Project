@@ -7,35 +7,40 @@ function getComputerChoice() {
     return choice
 }
 
-
 function playRound(playerSelection) {
-    const computerSelection = getComputerChoice();
+    let computerCounter = 0;
+    let playerCounter = 0;
+    const computerSelection = getComputerChoice(); 
   switch (playerSelection) {
     case "rock":
         if (computerSelection === "rock") {
-            console.log("It's a tie!")
             break;}
         else if (computerSelection === "paper") {
-            console.log("You lose! Paper beats rock.")
+            computerCounter = computerCounter + 1;
             break;}
         else if (computerSelection === "scissors") {
-            console.log("You win! Rock beats scissors.")
+            playerCounter = playerCounter + 1;
             break;}
     case "paper":
         if (computerSelection === "rock") { 
-            return "You win! Paper beats rock."}    
+            playerCounter = playerCounter + 1;}
         else if (computerSelection === "paper") {
-            return "It's a tie!"}
+            break;}
         else if (computerSelection === "scissors") {
-            return "You lose! Scissors beats paper."}
+            computerCounter = computerCounter + 1;
+            break;}
     case "scissors":    
         if (computerSelection === "rock") { 
-            return "You lose! Rock beats scissors."}
+            computerCounter = computerCounter + 1;
+            break;}
         else if (computerSelection === "paper") {
-            return "You win! Scissors beats paper."}
+            playerCounter = playerCounter + 1;
+            break;}
         else if (computerSelection === "scissors") {
-            return "It's a tie!"}
+            break;}
     default:
-        return;
+       break;
   }
-}   
+  
+  console.log(`Player: ${playerCounter} Computer: ${computerCounter}`);
+}

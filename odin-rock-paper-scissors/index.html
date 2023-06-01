@@ -9,22 +9,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <h1 class="arabic title">حجرة ورقة مقص</h1> -->
-    <h1 class="english title"> Rock Paper Scissors</h1>
-
     <div class="body">
-        <div class="container">
-            <p class="subtext">
-                Choose your weapon!
-            </p>
-            <div class="choices">
-                <button class="rock choice" onclick="playRound('rock');"></button>
-                <button class="paper choice" onclick="playRound()"></button>
-                <button class="scissors choice" onclick="playRound()"></button>
-            </div>
-            <div class="scoreboard">
-                <p class="score">Score: <span id="score">0</span></p>
-                <p class="round">Round: <span id="round">0</span></p>
+        <h1 class="title"> Rock Paper Scissors</h1>
+        <p class="subtext">
+            Choose your weapon!
+        </p>
+        <div class="choices">
+            <button class="rock choice" onclick="playRound('rock');"></button>
+            <button class="paper choice" onclick="playRound('paper')"></button>
+            <button class="scissors choice" onclick="playRound('scissors')"></button>
+        </div>
+        <div class="scoreboard">
+            <p id="score">Computer: <span id="score">0</span></p>
+            <p id="round">You: <span id="round">0</span></p>
         </div>  
     </div>
 </body>
