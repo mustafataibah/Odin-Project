@@ -1,3 +1,27 @@
-.body {
-    
+body {
+    height: 100%;
+    width: 100%;
 }
+
+ h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 50px;
+    margin: 10px;
+    padding: 0px;
+ }
+
+ .subtext {
+    text-align: center;
+    font-size: 2em;
+ }
+
+ .choices {
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ .choice {
+    height: 200px;
+    width: 200px;
+ }
