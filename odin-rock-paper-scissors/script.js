@@ -40,7 +40,8 @@ function playRound(playerSelection) {
                 break;}
             else if (computerSelection === "scissors") {
                 computerCounter = computerCounter + 1;
-                break;}case "scissors":    
+                break;}
+        case "scissors":    
                 if (computerSelection === "rock") { 
                     computerCounter = computerCounter + 1;
                     break;}
