@@ -11,8 +11,8 @@ const el = document.querySelector("#body");
 const bg = document.querySelector("#bg");
 
 window.addEventListener("mousemove", (e) => {
-    const xPercent = (e.clientX / window.innerWidth - 0.5) * 10;  
-    const yPercent = (e.clientY / window.innerHeight - 0.5) * 10;
+    const xPercent = e.clientX / window.innerWidth * 5 - 2.5;  
+    const yPercent = e.clientY / window.innerHeight * 5 - 2.5;
     bg.style.transform = `translate(${xPercent}%, ${yPercent}%)`;
 });
 

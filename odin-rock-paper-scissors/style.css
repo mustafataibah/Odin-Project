@@ -16,14 +16,14 @@ body {
 
 #bg {
    position: absolute;
-   height: 110%;  
-   width: 110%;  
-   top: -5%;  
-   left: -5%;  
+   height: 120%; /* Increased size */
+   width: 120%;
+   top: -10%; /* Adjusted position */
+   left: -10%; 
    z-index: 1;
 }
 
-.title, .subtext, .choices, .choice {
+.title, .subtext, .choices, .choice, #computer, #you{
    position: relative;
    z-index: 3;
 }
