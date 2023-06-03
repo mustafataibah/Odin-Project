@@ -1,27 +1,44 @@
 body {
-    height: 100%;
-    width: 100%;
+   margin: 0;
+   height: 100vh;
+   width: 100vw;
+   position: relative;
 }
 
- h1 {
-    font-size: 3em;
-    text-align: center;
-    margin-top: 50px;
-    margin: 10px;
-    padding: 0px;
- }
+.body {
+   height: 100%;
+   width: 100%;
+   position: relative;
+   overflow: hidden; 
+   background-color: #000000;
+   z-index: 2;
+}
 
- .subtext {
-    text-align: center;
-    font-size: 2em;
- }
+#bg {
+   position: absolute;
+   height: 110%;  
+   width: 110%;  
+   top: -5%;  
+   left: -5%;  
+   z-index: 1;
+}
 
- .choices {
-    display: flex;
-    justify-content: space-evenly;
- }
+.title, .subtext, .choices, .choice {
+   position: relative;
+   z-index: 3;
+}
 
- .choice {
-    height: 200px;
-    width: 200px;
- }
+h1 {
+   font-size: 3em;
+   text-align: center;
+   margin-top: 50px;
+   margin: 10px;
+   padding: 0px;
+}
+
+.subtext {
+   text-align: center;
+   font-size: 2em;
+}
+
+.choices

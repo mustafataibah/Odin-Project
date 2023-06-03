@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="body">
+    <div class="body" id="body">
+        <img id="bg" src="rockpaperscissors.png" alt="Background">
         <h1 class="title"> Rock Paper Scissors</h1>
         <p class="subtext">
             Choose your weapon!
@@ -20,9 +20,10 @@
             <button class="scissors choice" onclick="playRound('scissors')"></button>
         </div>
         <div class="scoreboard">
-            <p id="score">Computer: <span id="score">0</span></p>
-            <p id="round">You: <span id="round">0</span></p>
+            <p id="computer">0</p>
+            <p id="you">0</p>
         </div>  
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
