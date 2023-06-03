@@ -16,9 +16,9 @@ body {
 
 #bg {
    position: absolute;
-   height: 120%; /* Increased size */
+   height: 120%;  
    width: 120%;
-   top: -10%; /* Adjusted position */
+   top: -10%; 
    left: -10%; 
    z-index: 1;
 }
@@ -41,4 +41,3 @@ h1 {
    font-size: 2em;
 }
 
-.choices
