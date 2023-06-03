@@ -35,7 +35,8 @@ function playRound(playerSelection) {
                 break;}
         case "paper":
             if (computerSelection === "rock") { 
-                playerCounter = playerCounter + 1;}
+                playerCounter = playerCounter + 1;
+                break;}
             else if (computerSelection === "paper") {
                 break;}
             else if (computerSelection === "scissors") {
@@ -56,6 +57,7 @@ function playRound(playerSelection) {
     
         document.getElementById('computer').innerHTML = computerCounter;
         document.getElementById('you').innerHTML = playerCounter;
+        console.log(`Player: ${playerSelection} Computer: ${computerSelection}`)
         console.log(`Player: ${playerCounter} Computer: ${computerCounter}`);
         if (computerCounter === 5 || playerCounter === 5) {
             playerCounter = 0;
@@ -64,3 +66,13 @@ function playRound(playerSelection) {
             console.log("Game Over");
         }
     }
+
+
+    var splashScreen = document.querySelector('.splash');
+    setTimeout(function() {
+        splashScreen.style.opacity = 0;
+        splashScreen.style.transition = 'opacity 2s ease-in-out';  // Add fade-out effect
+        setTimeout(() => {
+            splashScreen.style.display = 'none'; // Use display: none to remove the splash element entirely
+        }, 1000);
+    }, 1000);
