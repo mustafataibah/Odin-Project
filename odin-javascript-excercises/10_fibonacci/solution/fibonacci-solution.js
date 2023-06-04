@@ -12,3 +12,4 @@ const fibonacci = function (count) {
 };
 
 module.exports = fibonacci;
+
