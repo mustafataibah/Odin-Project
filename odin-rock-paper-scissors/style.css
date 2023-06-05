@@ -1,93 +1,177 @@
+html,
 body {
-   margin: 0;
-   height: 100vh;
-   width: 100vw;
-   position: relative;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.body {
-   height: 100%;
-   width: 100%;
-   position: relative;
-   overflow: hidden; 
-   background-color: #000000;
-   z-index: 2;
+.padding-left {
+  min-width: 25%;
+  min-height: 100%;
+  background-color: #c55a46;
+  position: fixed;
 }
 
-#bg {
-   position: absolute;
-   height: 120%;  
-   width: 120%;
-   top: -10%; 
-   left: -10%; 
-   z-index: 1;
+.padding-right {
+  min-width: 25%;
+  min-height: 100%;
+  background-color: #c55a46;
+  position: fixed;
+  right: 0px;
 }
 
-.title, .subtext, .choices, .choice, #computer, #you{
-   position: relative;
-   z-index: 3;
+.padding-top {
+  margin: 0;
+  min-width: 100%;
+  min-height: 10%;
+  background-color: #c55a46;
+  left: 200px;
+}
+
+.padding-bottom {
+  margin: 0;
+  min-width: 100%;
+  min-height: 10%;
+  background-color: #c55a46;
+  position: fixed;
+  bottom: 0px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f7ecd8;
+  height: 100%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 10%;
+  min-height: 80%;
+}
+
+.header {
+  background-color: #d6b47e;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  height: 50px;
+}
+
+.title {
+  background-color: #2e4d52;
+  padding: 10px 40px;
+  font-family: "Teko", sans-serif;
+  font-size: 24px;
+  color: #fcfef8;
+  border-radius: 4px;
+}
+
+.footer {
+  background-color: #2e4d52;
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  justify-content: space-around;
+}
+
+.left-part {
+  font-family: "Teko", sans-serif;
+  color: #fcfef8;
+}
+
+.right-part {
+  font-family: "Teko", sans-serif;
+  color: #fcfef8;
+}
+/* .body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #000000;
+  z-index: 2;
+} */
+
+/* #bg {
+  position: absolute;
+  height: 120%;
+  width: 120%;
+  top: -10%;
+  left: -10%;
+  z-index: 1;
+}
+
+.title,
+.subtext,
+.choices,
+.choice,
+#computer,
+#you {
+  position: relative;
+  z-index: 3;
 }
 
 h1 {
-   font-size: 3em;
-   text-align: center;
-   margin-top: 50px;
-   margin: 10px;
-   padding: 0px;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 50px;
+  margin: 10px;
+  padding: 0px;
 }
 
 .subtext {
-   text-align: center;
-   font-size: 2em;
+  text-align: center;
+  font-size: 2em;
 }
 
 .choices {
-   display: flex;
-   justify-content: center;  
-   margin-top: 150px;
-   gap: 75px;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  gap: 75px;
 }
 .choice {
-   width: 200px;
-   height: 200px; 
+  width: 200px;
+  height: 200px;
 }
 
 .rock {
-   background-image: url("images/rock.png");
-   background-size: cover;
-   opacity: 0.98;
+  background-image: url("images/rock.png");
+  background-size: cover;
+  opacity: 0.98;
 }
 
 .paper {
-   background-image: url("images/paper.png");
-   background-size: cover;
-   opacity: 0.98;
+  background-image: url("images/paper.png");
+  background-size: cover;
+  opacity: 0.98;
 }
 
 .scissors {
-   background-image: url("images/scissor.png");
-   background-size: cover;
-   opacity: 0.98;
+  background-image: url("images/scissor.png");
+  background-size: cover;
+  opacity: 0.98;
 }
 
 .scoreboard {
-   display: flex;
-   justify-content: center;
-   gap: 10px;
-   margin-top: 30px;
-   font-size: 3em;
-}
-
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  font-size: 3em;
+} */
+/* 
 .splash {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background: rgb(230, 171, 63);
-   z-index: 200;
-   color: white;
-   text-align: center;
-   line-height: 90vh;
-}
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(230, 171, 63);
+  z-index: 200;
+  color: white;
+  text-align: center;
+  line-height: 90vh;
+} */
