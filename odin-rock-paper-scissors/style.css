@@ -49,6 +49,7 @@ body {
   margin-right: 25%;
   margin-bottom: 10%;
   min-height: 80%;
+  box-shadow: 10px 10px;
 }
 
 .header {
