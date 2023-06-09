@@ -70,6 +70,11 @@ function playRound(playerSelection) {
   }
 }
 
+function displayText() {
+  var text = document.getElementById("textField");
+  text.style.display = "block";
+}
+
 // var splashScreen = document.querySelector(".splash");
 // setTimeout(function () {
 //   splashScreen.style.opacity = 0;
