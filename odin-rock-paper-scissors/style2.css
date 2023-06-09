@@ -107,7 +107,8 @@ body {
   width: inherit;
   height: inherit;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .circle {
@@ -131,19 +132,35 @@ body {
   background-color: red;
 }
 
-.testing {
+.score-circle {
   position: relative;
   height: 55px;
   width: 55px;
   text-align: center;
   z-index: 10;
+  margin-top: 20px;
 }
 
 .right {
   width: inherit;
   height: inherit;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.field {
+  width: 150px;
+  height: 15px;
+  align-items: center;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
 }
 
 .middle {
@@ -155,6 +172,9 @@ body {
 .top-middle {
   width: 100%;
   min-height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-container {
