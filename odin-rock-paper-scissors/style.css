@@ -239,3 +239,7 @@ body {
   justify-content: space-around;
   flex-shrink: 0;
 }
+
+.flip {
+  transform: rotate(180deg);
+}

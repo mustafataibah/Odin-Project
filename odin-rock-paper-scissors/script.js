@@ -10,12 +10,6 @@ function getComputerChoice() {
 const el = document.querySelector("#body");
 const bg = document.querySelector("#bg");
 
-window.addEventListener("mousemove", (e) => {
-  const xPercent = (e.clientX / window.innerWidth) * 5 - 2.5;
-  const yPercent = (e.clientY / window.innerHeight) * 5 - 2.5;
-  bg.style.transform = `translate(${xPercent}%, ${yPercent}%)`;
-});
-
 let computerCounter = 0;
 let playerCounter = 0;
 let gamesPlayed = 0;
@@ -74,3 +68,8 @@ function displayText() {
   var text = document.getElementById("textField");
   text.style.display = "block";
 }
+
+document.querySelector("#frontButton").addEventListener("click", () => {
+  console.log("Front Button Clicked");
+  document.querySelector("#scissorImage").classList.add("flip");
+});
