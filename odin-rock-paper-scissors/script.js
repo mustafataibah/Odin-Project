@@ -74,12 +74,3 @@ function displayText() {
   var text = document.getElementById("textField");
   text.style.display = "block";
 }
-
-// var splashScreen = document.querySelector(".splash");
-// setTimeout(function () {
-//   splashScreen.style.opacity = 0;
-//   splashScreen.style.transition = "opacity 2s ease-in-out"; // Add fade-out effect
-//   setTimeout(() => {
-//     splashScreen.style.display = "none"; // Use display: none to remove the splash element entirely
-//   }, 1000);
-// }, 1000);

@@ -78,22 +78,48 @@ body {
   width: 150px;
   margin: 20px 0;
 }
+
 .weapon {
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
   border: #d6b47e 1px solid;
   width: 100px;
+  height: 20px;
   margin: 0px 30px;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 12 px;
 }
 
+.no-padding {
+  margin: 0;
+}
+
+.select {
+  font-size: 12px;
+  margin: 0;
+}
 .front {
   width: 23px;
   border-radius: 10px 0 0 10px;
-  border-width: 0;
+  border-width: 1px;
+  background-color: transparent;
+  border-color: #d6b47e;
 }
 
 .back {
   width: 23px;
   border-radius: 0 10px 10px 0;
-  border-width: 0;
+  border-width: 1px;
+  background-color: transparent;
+  border-color: #d6b47e;
+  justify-content: center;
+}
+
+.button-line {
+  border: 0.5px solid #d6b47e;
+  width: 7px;
 }
 
 .bottom {
@@ -138,7 +164,6 @@ body {
   width: 55px;
   text-align: center;
   z-index: 10;
-  margin-top: 20px;
 }
 
 .right {
@@ -181,22 +206,29 @@ body {
   border: 1px solid #d6b47e;
   border-radius: 4px;
   width: 200px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   flex-shrink: 0;
 }
 
 .just-a-line {
+  display: flex;
   background-color: #d6b47e;
   margin: 0;
   padding: 10px;
+  justify-content: center;
+}
+
+.a-line {
+  border: 0.9px solid #9c835e;
+  width: 100px;
+  margin: 0;
 }
 
 .prompt-container {
-  font-family: "Teko", sans-serif;
+  display: flex;
   min-height: 15px;
   padding: 4px;
   justify-content: center;
-  align-items: center;
 }
 
 .footer {
@@ -206,16 +238,4 @@ body {
   height: 120px;
   justify-content: space-around;
   flex-shrink: 0;
-}
-
-.left-part {
-  font-family: "Teko", sans-serif;
-  color: #fcfef8;
-  border-right: 1px solid white;
-  height: 50px;
-}
-
-.right-part {
-  font-family: "Teko", sans-serif;
-  color: #fcfef8;
 }
