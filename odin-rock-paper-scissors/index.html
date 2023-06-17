@@ -30,17 +30,19 @@
               src="./images/scissor.png"
               alt="rock"
               class="img"
-              id="scissorImage"
+              id="clickChange"
             />
           </div>
           <div class="choose">
-            <button class="back"><hr class="button-line" /></button>
+            <button class="back" id="backButton" onclick="backClickChange()">
+              <hr class="button-line" />
+            </button>
             <div class="weapon">
               <p class="no-padding"><</p>
               <p class="select">Text Here</p>
               <p class="no-padding">></p>
             </div>
-            <button class="front" id="frontButton">
+            <button class="front" id="frontButton" onclick="frontClickChange()">
               <hr class="button-line" />
             </button>
           </div>
