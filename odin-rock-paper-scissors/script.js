@@ -69,29 +69,35 @@ function displayText() {
   text.style.display = "block";
 }
 
-var counter = 0;
+var counter = 1;
 function frontClickChange() {
   if (counter == 0) {
     document.getElementById("clickChange").src = "images/rock.png";
     counter++;
+    console.log(counter);
   } else if (counter == 1) {
     document.getElementById("clickChange").src = "images/paper.png";
     counter++;
+    console.log(counter);
   } else if (counter == 2) {
     document.getElementById("clickChange").src = "images/scissor.png";
     counter = 0;
+    console.log(counter);
   }
 }
 
 function backClickChange() {
-  if (counter == 2) {
+  if (counter == 0) {
     document.getElementById("clickChange").src = "images/paper.png";
-    counter--;
-  } else if (counter == 1) {
+    counter = 2;
+    console.log(counter);
+  } else if (counter == 2) {
     document.getElementById("clickChange").src = "images/rock.png";
     counter--;
-  } else if (counter == 0) {
+    console.log(counter);
+  } else if (counter == 1) {
     document.getElementById("clickChange").src = "images/scissor.png";
-    counter = 2;
+    counter--;
+    console.log(counter);
   }
 }
