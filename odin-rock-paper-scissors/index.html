@@ -39,7 +39,7 @@
             </button>
             <div class="weapon">
               <p class="no-padding"><</p>
-              <p class="select">Text Here</p>
+              <p class="select">+</p>
               <p class="no-padding">></p>
             </div>
             <button class="front" id="frontButton" onclick="frontClickChange()">
@@ -51,20 +51,20 @@
           <div class="left">
             <div class="score-circle">
               <div class="player circle"></div>
-              <p>0</p>
+              <p id="playerScore">0</p>
             </div>
-            <p>Text Here</p>
+            <p>Player</p>
             <div class="blue field"></div>
-            <p class="push">Text Here</p>
+            <p class="push">might just remove</p>
           </div>
           <div class="middle">
             <div class="top-middle">
-              <button>Fight!</button>
+              <button onclick="playRound()">Fight!</button>
             </div>
             <div class="text-container">
               <div class="just-a-line"><hr class="a-line" /></div>
               <div class="prompt-container">
-                <p class="no-padding">Text Here</p>
+                <p class="no-padding" id="prompt">Can you Win?</p>
               </div>
             </div>
           </div>
@@ -72,11 +72,11 @@
           <div class="right">
             <div class="score-circle">
               <div class="computer circle"></div>
-              <p>0</p>
+              <p id="computerScore">0</p>
             </div>
-            <p>Text Here</p>
+            <p>Computer</p>
             <div class="red field"></div>
-            <p class="push">Text Here</p>
+            <p class="push">psychological text</p>
           </div>
         </div>
       </div>
