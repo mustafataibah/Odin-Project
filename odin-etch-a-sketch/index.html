@@ -3,10 +3,18 @@
   <head>
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="coloris.min.css" />
   </head>
   <body>
+    <h1>Etch-a-Sketch Game</h1>
+    <label for="gridSize">Grid Size: </label>
+    <input type="range" id="gridSize" name="gridSize" min="1" max="64" value="32" />
+    <span id="gridSizeValue">32</span> x <span id="gridSizeValue2">32</span>
+    <button id="colorPicker">Choose a color</button>
+    <button id="erase">Erase</button>
     <button id="clear">Clear</button>
     <div id="container"></div>
+    <script src="coloris.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
